@@ -1,0 +1,13 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar archivos de configuración local
+*.local
+
+# Ignorar archivos generados por el sistema
+.DS_Store
+dist/
+build/
