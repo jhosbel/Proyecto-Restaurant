@@ -10,11 +10,13 @@ Esta es una aplicación web desarrollada con **React usando Vite** en el front-e
 - Buscar restaurantes cercanos utilizando su ubicación.
 - Ver un historial de sus búsquedas anteriores.
 
-## 🖼️ Capturas de Pantalla (Opcional)
+## 🖼️ Capturas de Pantalla
 
-![Home Page](/screenshots/home.jpg)
-![Search Results](/screenshots/search.jpg)
-<img src="/screenshots/search.jpg" alt="Texto alternativo" width="500" height="500" />
+### Página de Inicio
+<img src="screenshots/home.jpg" alt="Página de Inicio" width="600" height="400" />
+
+### Resultados de Búsqueda
+<img src="screenshots/search.jpg" alt="Resultados de Búsqueda" width="600" height="400" />
 
 ## 🛠️ Instalación
 
@@ -24,145 +26,128 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
    ```bash
    git clone https://github.com/tu-usuario/Proyecto-Restaurant.git
    cd Proyecto-Restaurant
-Instala las dependencias del back-end:
+2. **Instala las dependencias del back-end:**
+    ```bash
+    cd backend
+    npm install
+3. **Instala las dependencias del front-end:**
+    ```bash Copy
+    cd ../frontend
+    npm install
+4. **Configura las variables de entorno:**
+    ```bash Copy
+    Crea un archivo .env en la carpeta backend y agrega las siguientes variables:
+    PORT=5000
+    MONGODB_URI=tu-mongodb-uri-generada-en-mongodb
+    JWT_SECRET=tu-clave-secreta
+    GOOGLE_API_KEY=tu-api-key-genrada-en-google-cloude
+5. **Inicia el servidor back-end:**
+    ```bash
+    Copy
+    cd ../backend
+    npm run start
+6. **Inicia el servidor front-end:**
+   ```bash
+    Copy
+    cd ../frontend
+    npm run dev
+7. **Abre tu navegador y visita:**
+    ```bash
+    Copy
+    http://localhost:5173
 
-bash
-Copy
-cd backend
-npm install
-Instala las dependencias del front-end:
-
-bash
-Copy
-cd ../frontend
-npm install
-Configura las variables de entorno:
-
-Crea un archivo .env en la carpeta backend y agrega las siguientes variables:
-
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/restaurant-app
-JWT_SECRET=tu-clave-secreta
-GOOGLE_API_KEY=tu-api-key-genrada-en-google-cloude
-
-Inicia el servidor back-end:
-
-bash
-Copy
-cd ../backend
-npm run start
-
-Inicia el servidor front-end:
-
-bash
-Copy
-cd ../frontend
-npm run dev
-
-Abre tu navegador y visita:
-
-bash
-Copy
-http://localhost:5173
-
-⚙️ Configuración
+## ⚙️ Configuración
 
 Variables de Entorno
-
 Asegúrate de configurar las siguientes variables de entorno en el archivo .env del back-end:
 
-PORT: Puerto en el que se ejecutará el servidor.
+- PORT: Puerto en el que se ejecutará el servidor.
 
-MONGODB_URI: URL de conexión a la base de datos MongoDB.
+- MONGODB_URI: URL de conexión a la base de datos MongoDB.
 
-JWT_SECRET: Clave secreta para firmar los tokens JWT.
+- JWT_SECRET: Clave secreta para firmar los tokens JWT.
 
-VITE_APP_API_URL: URL base de la API (usada en el front-end).
+- VITE_APP_API_URL: URL base de la API (usada en el front-end).
 
-Base de Datos
+Base de Datos:
+
 La aplicación utiliza MongoDB como base de datos. Asegúrate de tener MongoDB instalado y en ejecución.
 
-🚀 Uso
-Registro: Ve a /signup para crear una nueva cuenta.
+## 🚀 Uso
 
-Inicio de Sesión: Ve a /signin para iniciar sesión.
+1. Registro: Ve aRegistro para crear una nueva cuenta.
 
-Búsqueda de Restaurantes: Una vez autenticado, puedes buscar restaurantes cercanos en la página de inicio.
+2. Inicio de Sesión: Ve Iniciar Sesión para iniciar sesión.
 
-Historial: Ve a /profile para ver tu historial de búsquedas.
+3. Búsqueda de Restaurantes: Una vez autenticado, puedes buscar restaurantes cercanos en un area de 1500mts a la redonda de la dirección que proporciones en la página de inicio.
 
-🛠️ Tecnologías Utilizadas
+4. Historial: Ve a /profile para ver tu historial de búsquedas.
+
+## 🛠️ Tecnologías Utilizadas
 Front-End:
 
-React
+- React
 
-Tailwind CSS (o el framework CSS que uses)
+- Tailwind CSS (o el framework CSS que uses)
 
-React Router
+- React Router
 
 Back-End:
 
-Node.js
+- Node.js
 
-Express.js
+- Express.js
 
-MongoDB
+- MongoDB
 
 Autenticación:
 
-JWT (JSON Web Tokens)
+- JWT (JSON Web Tokens)
 
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
+    /proyecto
+    ├── backend
+    │   ├── controllers
+    │   ├── models
+    │   ├── routes
+    │   ├── middlewares
+    │   ├── config
+    │   ├── utils
+    │   ├── server.js
+    │   └── package.json
+    ├── frontend
+    │   ├── public
+    │   ├── src
+    │   │   ├── components
+    │   │   ├── context
+    │   │   ├── pages
+    │   │   ├── services
+    │   │   ├── App.js
+    │   │   └── index.js
+    │   ├── package.json
+    │   └── README.md
+    └── README.md
 
-/proyecto
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── middlewares
-│   ├── config
-│   ├── utils
-│   ├── server.js
-│   └── package.json
-├── frontend
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── context
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── package.json
-│   └── README.md
-└── README.md
-
-🤝 Contribución
+## 🤝 Contribución
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
 Haz un fork del repositorio.
 
-Crea una rama con tu nueva funcionalidad:
+    Crea una rama con tu nueva funcionalidad:
+    git checkout -b nombre-de-tu-rama
 
-bash
-Copy
-git checkout -b nombre-de-tu-rama
-Realiza tus cambios y haz commit:
+    Realiza tus cambios y haz commit:
+    git commit -m "Descripción de tus cambios"
 
-bash
-Copy
-git commit -m "Descripción de tus cambios"
-Sube tus cambios:
+    Sube tus cambios:
+    git push origin nombre-de-tu-rama
 
-bash
-Copy
-git push origin nombre-de-tu-rama
 Abre un Pull Request en GitHub.
 
 ## 📄 Solución Implementada y Decisiones Técnicas
 
 ### **Solución Implementada**
-La aplicación está diseñada para permitir a los usuarios buscar restaurantes cercanos, registrarse, iniciar sesión y ver su historial de búsquedas. Se implementaron las siguientes funcionalidades principales:
+La aplicación está diseñada para permitir a los usuarios buscar restaurantes cercanos a una dirección ingresada, registrarse, iniciar sesión y ver su historial de búsquedas. Se implementaron las siguientes funcionalidades principales:
 
 1. **Autenticación de Usuarios**:
    - Los usuarios pueden registrarse e iniciar sesión utilizando un correo electrónico y contraseña.
@@ -170,7 +155,7 @@ La aplicación está diseñada para permitir a los usuarios buscar restaurantes 
 
 2. **Búsqueda de Restaurantes**:
    - Los usuarios pueden buscar restaurantes cercanos utilizando su ubicación.
-   - Se integra una API externa (como Google Places o Zomato) para obtener los datos de los restaurantes.
+   - Se integra una API externa **Google Places** para obtener los datos de los restaurantes.
 
 3. **Historial de Búsquedas**:
    - Las búsquedas realizadas por los usuarios se guardan en una base de datos MongoDB.
@@ -199,5 +184,5 @@ La aplicación está diseñada para permitir a los usuarios buscar restaurantes 
    - Se utilizó **lazy loading** para cargar componentes de React solo cuando son necesarios.
    - Se implementó un sistema de caché para almacenar búsquedas recientes y mejorar el rendimiento.
 
-📄 Licencia
+## 📄 Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
