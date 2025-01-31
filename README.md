@@ -75,11 +75,11 @@ La aplicación utiliza MongoDB como base de datos. Asegúrate de tener MongoDB i
 
 ## 🚀 Uso
 
-1. Registro: Ve aRegistro para crear una nueva cuenta.
+1. Registro: Ve a /signup para crear una nueva cuenta.
 
-2. Inicio de Sesión: Ve Iniciar Sesión para iniciar sesión.
+2. Inicio de Sesión: Ve a /signin para iniciar sesión.
 
-3. Búsqueda de Restaurantes: Una vez autenticado, puedes buscar restaurantes cercanos en un area de 1500mts a la redonda de la dirección que proporciones en la página de inicio.
+3. Búsqueda de Restaurantes: Una vez autenticado, puedes buscar restaurantes cercanos en un área de 1500 metros a la redonda de la dirección que proporciones en la página de inicio.
 
 4. Historial: Ve a /profile para ver tu historial de búsquedas.
 
