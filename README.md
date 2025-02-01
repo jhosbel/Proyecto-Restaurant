@@ -41,6 +41,10 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
     MONGODB_URI=tu-mongodb-uri-generada-en-mongodb
     JWT_SECRET=tu-clave-secreta
     GOOGLE_API_KEY=tu-api-key-genrada-en-google-cloude
+
+    Crea un archivo .env en la carpeta frontend y agrega las siguientes variables:
+    VITE_GOOGLE_MAPS_API_KEY=tu-api-key-genrada-en-google-cloude
+    VITE_APP_API_URL=http://localhost:5000
 5. **Inicia el servidor back-end:**
     ```bash
     Copy
