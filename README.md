@@ -46,18 +46,15 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
     VITE_GOOGLE_MAPS_API_KEY=tu-api-key-genrada-en-google-cloude
     VITE_APP_API_URL=http://localhost:5000
 5. **Inicia el servidor back-end:**
-    ```bash
-    Copy
+    ```bash Copy
     cd ../backend
     npm run start
 6. **Inicia el servidor front-end:**
-   ```bash
-    Copy
+   ```bash Copy
     cd ../frontend
     npm run dev
 7. **Abre tu navegador y visita:**
-    ```bash
-    Copy
+    ```bash Copy
     http://localhost:5173
 
 ## ⚙️ Configuración
